@@ -1,0 +1,275 @@
+.displayweather {
+  flex-flow: column;
+  width: 100%;
+}
+
+.localTime {
+  text-align: left;
+}
+
+.displayweather .maincard {
+  width: 100%;
+  margin-top: 20px;
+  padding: 50px;
+  border-radius: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.displayweather .maincard .cardtitle {
+  top: 10px;
+  left: 10px;
+  font-size: 2.5rem;
+}
+
+.displayweather .maincard .cardsubtitle {
+  position: absolute;
+  left: 10px;
+  color: grey;
+  margin-top: -8px;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: -10px;
+  color: white;
+}
+
+.displayweather .weather-icon {
+  max-width: 200px;
+  right: 50px;
+  color: white;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.displayweather .weather-main {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+.displayweather .weather-description {
+  position: relative;
+  font-size: 1.4rem;
+  left: 100%;
+}
+
+.displayweather .weatherdetails {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  justify-content: space-evenly;
+  justify-items: stretch;
+}
+
+
+.section1, .section2 {
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px 10px 1px darkgray;
+}
+
+h2 {
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 20px 0 20px 0;
+  color: white;
+}
+
+h3 {
+  margin: 5px 0;
+  color: #333;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+h4 {
+  text-align: left;
+  margin-right: 30px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.section1 table {
+  width: 95%;
+}
+
+.section2 table {
+  width: 95%;
+}
+
+td {
+  border-bottom: 2px dashed lightgray;
+  text-align: end;
+}
+
+.displayweather .weatherdetails span {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.items-center {
+  height: 40px !important;
+  width: 50px !important;
+}
+
+.error {
+  color: black; 
+  position: absolute;
+  padding-top: 5px;
+  width: 100%; 
+  font-size: 1em;
+}
+
+/* React Slick overrides and additional styling */
+
+.slick-list {
+  overflow: hidden; 
+}
+
+.slick-prev,
+.slick-next {
+  color: #444; 
+  z-index: 1; 
+}
+
+.slick-dots li button:before {
+  font-size: initial !important;
+  color: #61dafb !important; 
+}
+.slick-slide img {
+  display: flex;
+}
+
+.slick-prev,
+.slick-next {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .displayweather .weatherdetails {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    justify-content: center;
+    font-size: 0.6rem;
+  }
+
+  .displayweather .weatherdetails span {
+    font-size: 0.7rem;
+    color: white;
+  }
+
+  .displayweather .weather-main {
+    position: static;
+    top: 50px;
+    right: 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+
+  .displayweather .maincard {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+
+  .displayweather .maincard .location-temp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .displayweather .maincard .location-container {
+    text-align: center;
+    margin-bottom: 10px; 
+  }
+
+  .displayweather .maincard .weather-icon {
+    max-width: 120px; 
+  }
+  
+  
+  .displayweather .maincard .temp-container h1 {
+    font-size: 4rem; 
+    color: white;
+  }  
+
+  .section1 {
+    width: 90%;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 10px 1px darkgray;
+  }
+
+  .section2 {
+    width: 90%;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 10px 1px darkgray;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 20px 0 20px 0;
+    color: white;
+  }
+
+  h3 {
+    margin: 5px 0;
+    color: #333;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  h4 {
+    text-align: left;
+    font-size: 0.88rem;
+    color: white;
+    margin-right: 0 !important;
+  }
+
+  .section1 table {
+    width: auto;
+  }
+
+  .section2 table {
+    width: auto;
+  }
+
+  td {
+    border-bottom: 2px dashed lightgray;
+    text-align: end;
+    padding-right: 2px !important;
+  }
+
+  .weather-forecast-grid {
+    display: block;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: block;
+  }
+}

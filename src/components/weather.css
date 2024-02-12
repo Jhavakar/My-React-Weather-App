@@ -1,0 +1,174 @@
+.weather {
+  padding: 0px 20px 20px 20px;
+  width: auto;
+  padding-bottom: 40px;
+  background-image: url("../assets/images/bubbles.png");
+}
+
+.title {
+  font-size: 3.5em;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.weather form {
+  display: flex;
+  position: relative;
+  margin-top: 40px;
+  color: #555;
+  border-radius: 5px;
+}
+
+.weather form input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: medium;
+}
+
+.weather .getweather {
+  padding: 10px;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.weather .getweather:hover {
+  color: black;
+}
+
+.weather .getweather:focus {
+  outline: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+button[type="submit"] {
+  top: 10px;
+  padding: 0;
+  margin-left: -30px;
+  margin-right: 5px;
+  border: 0 solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 20px;
+  background-color: transparent;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.5;
+}
+
+.citysuggestionsdropdown {
+  background-color: white;
+  width: max-content;
+  border-radius: 20px 0 20px 20px;
+  box-shadow: 0px 10px 10px -2px gray;
+  z-index: 10;
+  position: absolute;
+}
+
+.city-suggestion {
+  padding: 10px;
+  width: max-content;
+  border-bottom: dashed;
+  border-bottom-color: gray;
+}
+
+.city-suggestion:last-child {
+  border-bottom: none;
+}
+
+.citysuggestionsdropdown .city-suggestion:hover {
+  color: #000;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: transparent;
+}
+
+input:focus {
+  outline: none;
+  color: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.search-form {
+  position: relative;
+  width: 100%;
+}
+
+.search-input-container {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent;
+  padding: 10px;
+}
+
+.search-button:hover {
+  background-color: #f0f0f0;
+}
+.search-icon .fa-search {
+  font-size: 1em;
+}
+
+.error-message {
+  color: black; 
+  position: absolute;
+  bottom: -20px; 
+  left: 0;
+  width: 100%; 
+  font-size: 1.2em;
+  font-weight: 600; 
+}
