@@ -13,9 +13,6 @@ import {
   faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
 
-// import { WeatherSvg } from "weather-icons-animated";
-// import { mapWeatherIdToState, isDaytime } from './WeatherMapping';
-
 
 function DisplayWeather({ data }) {
   // Early return for missing data or city not found
@@ -38,17 +35,6 @@ function DisplayWeather({ data }) {
   const tempMax = Math.floor(data.main.temp_max - 273.15);
   const tempMin = Math.floor(data.main.temp_min - 273.15);
 
-  // const currentTime = Date.now() / 1000; // Current time in Unix timestamp
-  // const sunrise = data.sys.sunrise;
-  // const sunset = data.sys.sunset;
-  
-  // const dayOrNight = isDaytime(currentTime, sunrise, sunset);
-  
-  // Use `mapWeatherIdToState` and `isDaytime` to get the correct weather state
-  // const weatherState = mapWeatherIdToState(data.weather[0].id, dayOrNight);
-
-
-
   return (
     <div className="displayweather">
       <div className="maincard">
@@ -66,7 +52,6 @@ function DisplayWeather({ data }) {
         src={iconUrl}
         alt={data.weather[0].main}
       />
-      {/* <WeatherSvg state={weatherState} width={80}/> */}
     </div>
     <div className="temp-container">
       <h1>
