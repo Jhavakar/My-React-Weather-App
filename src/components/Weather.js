@@ -15,7 +15,7 @@ function Weather() {
   const [showSearch, setShowSearch] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const APIKEY = "b16154f6b1500614c70f08651397bb8d";
+  const APIKEY = "API_KEY";
 
   const weatherData = async (e) => {
     e.preventDefault();
